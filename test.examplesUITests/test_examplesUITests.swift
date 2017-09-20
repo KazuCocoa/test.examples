@@ -26,24 +26,15 @@ class test_examplesUITests: XCTestCase {
     }
     
     func testExample() {
-        var textField: XCUIElement? = nil
         // New for Xcode 9
         // https://developer.apple.com/documentation/xctest/xcuielement/2879412-waitforexistence?changes=latest_minor
         // more handy than https://github.com/KazuCocoa/XCUITestExample/blob/master/TestAppUITests/TestAppUITests.swift#L81
-        waitForExpectations(timeout: 30) { _ in
-            // something
-            textField = self.app.textFields["example"]
-        }
 
-        if textField != nil {
-            XCTAssert((textField?.exists)!)
-        } else {
-            XCTFail()
-        }
+        XCTAssert(self.app.staticTexts["First View"].exists)
 
-        // We can check screenshots took automatically: https://kazucocoa.wordpress.com/2015/11/29/swiftxcuitestにおけるcoverageとscreenshotの在り処/
-        // Previously, I investigated the place save screenshot.
+        // We can check screenshots which took automatically: https://kazucocoa.wordpress.com/2015/11/29/swiftxcuitestにおけるcoverageとscreenshotの在り処/
         // XCUITest is good for running on Xcode, but its a bit difficult to run on CI.
+        // XCUITest has no failure handler which means we can manage something after failing tests.
     }
     
 }
