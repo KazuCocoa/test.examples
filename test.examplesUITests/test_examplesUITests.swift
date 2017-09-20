@@ -9,28 +9,41 @@
 import XCTest
 
 class test_examplesUITests: XCTestCase {
-        
+
+    let app: XCUIApplication = XCUIApplication()
+
     override func setUp() {
         super.setUp()
-        
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
+
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        app.launch()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        var textField: XCUIElement? = nil
+        // New for Xcode 9
+        // https://developer.apple.com/documentation/xctest/xcuielement/2879412-waitforexistence?changes=latest_minor
+        // more handy than https://github.com/KazuCocoa/XCUITestExample/blob/master/TestAppUITests/TestAppUITests.swift#L81
+        waitForExpectations(timeout: 30) { _ in
+            // something
+            textField = self.app.textFields["example"]
+        }
+
+        if textField != nil {
+            XCTAssert((textField?.exists)!)
+        } else {
+            XCTFail()
+        }
+
+        // We can check screenshots took automatically: https://kazucocoa.wordpress.com/2015/11/29/swiftxcuitestにおけるcoverageとscreenshotの在り処/
+        // Previously, I investigated the place save screenshot.
+        // XCUITest is good for running on Xcode, but its a bit difficult to run on CI.
     }
     
 }
