@@ -26,8 +26,8 @@
       </Testables>
       <EnvironmentVariables>
          <EnvironmentVariable
-            key = "DYLD_INSERT_LIBRARIES"
-            value = "@executable_path/EarlGrey.framework/EarlGrey"
+            key = "EarlGrey"
+            value = "true"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>

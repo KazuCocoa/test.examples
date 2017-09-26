@@ -40,6 +40,9 @@ class test_examplesEarlGreyTests: XCTestCase {
 
         print(ProcessInfo.processInfo.environment)
         XCTAssert(ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil)
+
+        // add "EarlGrey" = "true" as environment variables for Test scheme
+        XCTAssert(ProcessInfo.processInfo.environment["EarlGrey"] == "true")
     }
 
     // https://github.com/google/EarlGrey/blob/master/Demo/EarlGreyExample/EarlGreyExampleSwiftTests/EarlGreyExampleSwiftTests.swift
