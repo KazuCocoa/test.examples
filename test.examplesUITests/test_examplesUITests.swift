@@ -24,6 +24,14 @@ class test_examplesUITests: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
+
+    func testCheckIfCurrentProcessIsXctest() {
+        XCTAssert(NSClassFromString("XCTest") != nil)
+        XCTAssert(NSClassFromString("XCTestCase") != nil)
+
+        print(ProcessInfo.processInfo.environment)
+        XCTAssert(ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil)
+    }
     
     func testExample() {
         // New for Xcode 9

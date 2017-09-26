@@ -34,6 +34,14 @@ class test_examplesEarlGreyTests: XCTestCase {
         super.tearDown()
     }
 
+    func testCheckIfCurrentProcessIsXctest() {
+        XCTAssert(NSClassFromString("XCTest") != nil)
+        XCTAssert(NSClassFromString("XCTestCase") != nil)
+
+        print(ProcessInfo.processInfo.environment)
+        XCTAssert(ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil)
+    }
+
     // https://github.com/google/EarlGrey/blob/master/Demo/EarlGreyExample/EarlGreyExampleSwiftTests/EarlGreyExampleSwiftTests.swift
     func testExample() {
         // FIXME
