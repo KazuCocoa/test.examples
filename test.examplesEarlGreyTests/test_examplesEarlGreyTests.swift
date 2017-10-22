@@ -14,6 +14,7 @@ class test_examplesEarlGreyTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
+
         configureEarlGrey()
         let myHandler = myFailureHandler()
         EarlGrey.setFailureHandler(handler: myHandler)
@@ -28,6 +29,9 @@ class test_examplesEarlGreyTests: XCTestCase {
         let kMaxAnimationInterval: CFTimeInterval = 5.0
         GREYConfiguration.sharedInstance().setValue(kMaxAnimationInterval, forConfigKey: kGREYConfigKeyCALayerMaxAnimationDuration)
         GREYTestHelper.enableFastAnimation()
+
+        let networkBlackList = [".*.firebaseio.*"]
+        GREYConfiguration.sharedInstance().setValue(networkBlackList, forConfigKey: kGREYConfigKeyURLBlacklistRegex)
     }
     
     override func tearDown() {
