@@ -13,6 +13,10 @@
 		295DD3B26D2197DE0F1E8BF0 /* EarlGrey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5C15E016816DA1968371B2 /* EarlGrey.framework */; };
 		54394881766650D664DE3553 /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A40FB4E6D37CB5C9751428 /* EarlGrey.swift */; };
 		71ACD50845E7023DE79DEBF1 /* EarlGrey.framework in EarlGrey Copy Files */ = {isa = PBXBuildFile; fileRef = FA5C15E016816DA1968371B2 /* EarlGrey.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		728DA8A01F9CEF5500276A80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 728DA89F1F9CEC5100276A80 /* GoogleService-Info.plist */; };
+		728DA8A31F9CF46F00276A80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 728DA89F1F9CEC5100276A80 /* GoogleService-Info.plist */; };
+		728DA8A41F9CF47100276A80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 728DA89F1F9CEC5100276A80 /* GoogleService-Info.plist */; };
+		728DA8A51F9CF47200276A80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 728DA89F1F9CEC5100276A80 /* GoogleService-Info.plist */; };
 		72B57C8A1F72A8020043DC93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B57C891F72A8020043DC93 /* AppDelegate.swift */; };
 		72B57C8C1F72A8020043DC93 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B57C8B1F72A8020043DC93 /* FirstViewController.swift */; };
 		72B57C8E1F72A8020043DC93 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B57C8D1F72A8020043DC93 /* SecondViewController.swift */; };
@@ -68,6 +72,7 @@
 		1D38BF48D8F36C7B33BE2E3D /* Pods-test.examplesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.examplesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test.examplesUITests/Pods-test.examplesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		51B5E2FDFE43628EED136076 /* Pods-test.examplesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.examplesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-test.examplesTests/Pods-test.examplesTests.release.xcconfig"; sourceTree = "<group>"; };
 		5BA473597663131F61F47E12 /* Pods-test.examplesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.examplesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-test.examplesUITests/Pods-test.examplesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		728DA89F1F9CEC5100276A80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		72B57C861F72A8020043DC93 /* test.examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72B57C891F72A8020043DC93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72B57C8B1F72A8020043DC93 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +181,7 @@
 		72B57C881F72A8020043DC93 /* test.examples */ = {
 			isa = PBXGroup;
 			children = (
+				728DA89F1F9CEC5100276A80 /* GoogleService-Info.plist */,
 				72B57C891F72A8020043DC93 /* AppDelegate.swift */,
 				72B57C8B1F72A8020043DC93 /* FirstViewController.swift */,
 				72B57C8D1F72A8020043DC93 /* SecondViewController.swift */,
@@ -372,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72B57C961F72A8020043DC93 /* LaunchScreen.storyboard in Resources */,
+				728DA8A01F9CEF5500276A80 /* GoogleService-Info.plist in Resources */,
 				72B57C931F72A8020043DC93 /* Assets.xcassets in Resources */,
 				72B57C911F72A8020043DC93 /* Main.storyboard in Resources */,
 			);
@@ -381,6 +388,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				728DA8A41F9CF47100276A80 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +396,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				728DA8A51F9CF47200276A80 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				728DA8A31F9CF46F00276A80 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
