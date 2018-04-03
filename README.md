@@ -1,5 +1,7 @@
 # Measure coverage with xccov
 
+(One test fails, though)
+
 ```bash
 $ xcodebuild -workspace test.examples.xcworkspace -scheme test.examples -derivedDataPath Build/ -destination 'platform=iOS Simulator,OS=11.3,name=iPhone 7' -enableCodeCoverage YES clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 ```
