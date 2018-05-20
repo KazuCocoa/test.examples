@@ -245,7 +245,6 @@
 				72B57C831F72A8020043DC93 /* Frameworks */,
 				72B57C841F72A8020043DC93 /* Resources */,
 				7BC366566D3CFD3F846AC9F7 /* [CP] Embed Pods Frameworks */,
-				CE855C2407FA823520D3D186 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,8 +263,6 @@
 				72B57C981F72A8030043DC93 /* Sources */,
 				72B57C991F72A8030043DC93 /* Frameworks */,
 				72B57C9A1F72A8030043DC93 /* Resources */,
-				7BC253493FB6B062DD93B647 /* [CP] Embed Pods Frameworks */,
-				8110903E18069D409F381946 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -285,8 +282,6 @@
 				72B57CA31F72A8030043DC93 /* Sources */,
 				72B57CA41F72A8030043DC93 /* Frameworks */,
 				72B57CA51F72A8030043DC93 /* Resources */,
-				FED10045F422FAA09B18317E /* [CP] Embed Pods Frameworks */,
-				7680F4B1551EDAC83E9B5981 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,7 +303,6 @@
 				72B8664E1F72C22F00697E9F /* Resources */,
 				C291876DA41A5D751CF5C6C3 /* EarlGrey Copy Files */,
 				5EDB23BE6DE8AC5438A38E94 /* [CP] Embed Pods Frameworks */,
-				C7DF016D76F8E55122504CDD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -465,36 +459,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test.examplesEarlGreyTests/Pods-test.examplesEarlGreyTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7680F4B1551EDAC83E9B5981 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test.examplesUITests/Pods-test.examplesUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7BC253493FB6B062DD93B647 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test.examplesTests/Pods-test.examplesTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7BC366566D3CFD3F846AC9F7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -513,21 +477,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test.examples/Pods-test.examples-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8110903E18069D409F381946 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test.examplesTests/Pods-test.examplesTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9D2A70624665F109180A92C0 /* [CP] Check Pods Manifest.lock */ = {
@@ -564,51 +513,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C7DF016D76F8E55122504CDD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test.examplesEarlGreyTests/Pods-test.examplesEarlGreyTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CE855C2407FA823520D3D186 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test.examples/Pods-test.examples-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FED10045F422FAA09B18317E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test.examplesUITests/Pods-test.examplesUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
