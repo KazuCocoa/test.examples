@@ -17,3 +17,8 @@ $ xcrun xccov view --json Build/Logs/Test/*.xccovreport | jq .
 # Output: https://gist.github.com/KazuCocoa/879554e02934d368f976959d3f8cec4b
 $ xcrun xccov view --only-targets --json Build/Logs/Test/*.xccovreport | jq .
 ```
+
+# Other libraries
+- Help to handle xcuitest via Python script
+    - https://github.com/google/xctestrunner
+
